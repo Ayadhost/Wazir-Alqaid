@@ -37,33 +37,40 @@
       border: 1px solid #d4af37;
       border-radius: 30px;
       margin: 10px auto;
-      padding: 15px 20px;
+      padding: 10px 20px;
       max-width: 400px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       direction: rtl;
       transition: background-color 0.3s;
+      height: 70px;
     }
 
-    .link-card:hover {
-      background-color: #4a4a4a;
-    }
-
-    .link-card img {
-      width: 50px;
-      height: 50px;
+    .icon-wrapper {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       border: 2px solid #d4af37;
-      padding: 5px;
-      background-color: transparent; /* لا يوجد خلفية للأيقونة */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-wrapper img {
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
     }
 
     .link-text {
       flex-grow: 1;
       margin-right: 15px;
-      font-size: 18px;
+      font-size: 20px;
       text-align: right;
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
 
     a {
@@ -79,51 +86,72 @@
   <h1>وزير القائد صالح محمد العراقي</h1>
   <p>الروابط الخاصة بالحسابات والمواقع الرسمية التابعة للحاج صالح محمد العراقي</p>
 
+  <!-- الموقع الرسمي -->
   <a href="https://saleh-iq.com/" target="_blank">
     <div class="link-card">
-      <img src="website.png" alt="الموقع الرسمي" />
+      <div class="icon-wrapper">
+        <img src="website.png" alt="الموقع الرسمي" />
+      </div>
       <div class="link-text">الموقع الرسمي</div>
     </div>
   </a>
 
+  <!-- تيك توك -->
   <a href="https://www.tiktok.com/@wazeer.alqaed" target="_blank">
     <div class="link-card">
-      <img src="tiktok.png" alt="تيك توك" />
+      <div class="icon-wrapper">
+        <img src="tiktok.png" alt="تيك توك" />
+      </div>
       <div class="link-text">حساب التيك توك</div>
     </div>
   </a>
 
+  <!-- تيليجرام -->
   <a href="https://t.me/Salihaliraqi" target="_blank">
     <div class="link-card">
-      <img src="telegram.png" alt="تيليجرام" />
+      <div class="icon-wrapper">
+        <img src="telegram.png" alt="تيليجرام" />
+      </div>
       <div class="link-text">قناة تيليجرام</div>
     </div>
   </a>
 
+  <!-- يوتيوب -->
   <a href="https://www.youtube.com/@salehmohammedaliraqi" target="_blank">
     <div class="link-card">
-      <img src="youtube.png" alt="يوتيوب" />
+      <div class="icon-wrapper">
+        <img src="youtube.png" alt="يوتيوب" />
+      </div>
       <div class="link-text">قناة اليوتيوب</div>
     </div>
   </a>
 
+  <!-- فيسبوك - صفحة إعجاب -->
   <a href="https://www.facebook.com/alwazeersaleh" target="_blank">
     <div class="link-card">
-      <img src="facebook.png" alt="فيسبوك" />
+      <div class="icon-wrapper">
+        <img src="facebook.png" alt="فيسبوك" />
+      </div>
       <div class="link-text">صفحة الفيسبوك الرسمية</div>
     </div>
   </a>
 
+  <!-- فيسبوك - حساب شخصي -->
   <a href="https://www.facebook.com/alwazir.maslah" target="_blank">
     <div class="link-card">
-      <img src="facebook.png" alt="فيسبوك" />
+      <div class="icon-wrapper">
+        <img src="facebook.png" alt="فيسبوك" />
+      </div>
       <div class="link-text">الحساب الشخصي على فيسبوك</div>
     </div>
   </a>
 
+  <!-- منصة X -->
   <a href="https://x.com/salih_m_iraqi" target="_blank">
     <div class="link-card">
-      <img src="x.png" alt="منصة X" />
+      <div class="icon-wrapper">
+        <img src="x.png" alt="منصة X" />
+      </div>
       <div class="link-text">منصة X</div>
     </div>
   </a>
