@@ -12,19 +12,25 @@
       text-align: center;
       padding: 20px;
     }
+
     .logo {
-      width: 120px;
+      width: 150px;
+      border-radius: 50%;
       margin: 20px auto;
+      box-shadow: 0 0 15px #00000055;
     }
+
     h1 {
       font-size: 24px;
       margin: 10px 0;
     }
+
     p {
       font-size: 16px;
       color: #ccc;
       margin-bottom: 30px;
     }
+
     .link-card {
       background-color: #14213d;
       border: 1px solid #ccc;
@@ -36,44 +42,69 @@
       align-items: center;
       justify-content: space-between;
       direction: rtl;
+      transition: background-color 0.3s;
     }
+
+    .link-card:hover {
+      background-color: #1d2a48;
+    }
+
     .link-card img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
     }
+
     .link-text {
       flex-grow: 1;
       margin-right: 15px;
       font-size: 18px;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <img src="logo.png" alt="شعار" class="logo">
+  <!-- شعار -->
+  <img src="wazir alqaid.jpg" alt="شعار وزير القائد" class="logo">
+
+  <!-- عنوان -->
   <h1>وزير القائد صالح محمد العراقي</h1>
   <p>الروابط الخاصة بالحسابات والمواقع الرسمية التابعة للحاج صالح محمد العراقي</p>
 
-  <div class="link-card">
-    <img src="logo.png" alt="وزير القائد">
-    <div class="link-text">وزير القائد</div>
-  </div>
+  <!-- الروابط -->
+  <a href="https://example.com/link1" target="_blank">
+    <div class="link-card">
+      <img src="wazir alqaid.jpg" alt="وزير القائد">
+      <div class="link-text">وزير القائد</div>
+    </div>
+  </a>
 
-  <div class="link-card">
-    <img src="muslih.jpg" alt="مصلح محمد العراقي">
-    <div class="link-text">مصلح محمد العراقي</div>
-  </div>
+  <a href="https://example.com/link2" target="_blank">
+    <div class="link-card">
+      <img src="muslih.jpg" alt="مصلح محمد العراقي">
+      <div class="link-text">مصلح محمد العراقي</div>
+    </div>
+  </a>
 
-  <div class="link-card">
-    <img src="logo.png" alt="منصة اكس">
-    <div class="link-text">منصة اكس</div>
-  </div>
+  <a href="https://example.com/link3" target="_blank">
+    <div class="link-card">
+      <img src="wazir alqaid.jpg" alt="منصة اكس">
+      <div class="link-text">منصة اكس</div>
+    </div>
+  </a>
 
-  <div class="link-card">
-    <img src="youtube.jpg" alt="قناة اليوتيوب">
-    <div class="link-text">قناة اليوتيوب</div>
-  </div>
+  <a href="https://example.com/link4" target="_blank">
+    <div class="link-card">
+      <img src="youtube.jpg" alt="قناة اليوتيوب">
+      <div class="link-text">قناة اليوتيوب</div>
+    </div>
+  </a>
 
 </body>
 </html>
