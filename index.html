@@ -81,6 +81,7 @@
     .icon-wrapper img {
       width: 32px;
       height: 32px;
+      background-color: transparent;
     }
 
     .link-text {
@@ -148,23 +149,6 @@
       text-decoration: none;
       color: white;
     }
-
-    /* ✅ Responsive adjustments */
-    @media (max-width: 600px) {
-      .link-card {
-        flex-direction: column;
-        height: auto;
-        padding: 15px;
-      }
-      .link-text {
-        width: 100%;
-        font-size: 18px;
-        margin-top: 10px;
-      }
-      .statement p {
-        font-size: 20px !important;
-      }
-    }
   </style>
 </head>
 <body>
@@ -174,43 +158,42 @@
   <h1>وزير القائد صالح محمد العراقي</h1>
   <p>الروابط الخاصة بالحسابات والمواقع الرسمية التابعة للحاج صالح محمد العراقي</p>
 
-  <!-- البطاقات -->
+  <!-- روابط الحسابات -->
   <a href="https://www.facebook.com/alwazeersaleh" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="facebook.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="facebook.png" alt="وزير القائد" /></div>
     <div class="link-text">وزير القائد</div></div>
   </a>
 
   <a href="https://www.facebook.com/alwazir.maslah" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="facebook.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="facebook.png" alt="مصلح محمد العراقي" /></div>
     <div class="link-text">مصلح محمد العراقي</div></div>
   </a>
 
   <a href="https://x.com/salih_m_iraqi" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="x.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="x.png" alt="منصة إكس" /></div>
     <div class="link-text">منصة إكس</div></div>
   </a>
 
   <a href="https://www.youtube.com/@salehmohammedaliraqi" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="youtube.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="youtube.png" alt="يوتيوب" /></div>
     <div class="link-text">قناة اليوتيوب</div></div>
   </a>
 
   <a href="https://www.tiktok.com/@wazeer.alqaed" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="tiktok.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="tiktok.png" alt="تيك توك" /></div>
     <div class="link-text">حساب التيك توك</div></div>
   </a>
 
   <a href="https://t.me/Salihaliraqi" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="telegram.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="telegram.png" alt="تيليجرام" /></div>
     <div class="link-text">قناة التليگرام</div></div>
   </a>
 
   <a href="https://saleh-iq.com/" target="_blank">
-    <div class="link-card"><div class="icon-wrapper"><img src="website.png" /></div>
+    <div class="link-card"><div class="icon-wrapper"><img src="website.png" alt="الموقع الرسمي" /></div>
     <div class="link-text">الموقع الرسمي</div></div>
   </a>
 
-  <!-- البيان -->
   <div class="statement">
     <p class="center"><strong>بسمه تعالى</strong></p>
     <p>نود إعلامكم بأن المواقع الخاصة التي يحق لها نشر التوجيهات والإرشادات حصراً هي :-<br>
@@ -251,7 +234,6 @@
     </a>
   </div>
 
-  <!-- اللوغو -->
   <img src="salh logo.svg" alt="شعار صالح محمد العراقي" class="footer-logo" />
 
 </body>
