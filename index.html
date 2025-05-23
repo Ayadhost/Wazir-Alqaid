@@ -14,6 +14,17 @@
       padding: 20px;
     }
 
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .logo {
       width: 120px;
       border-radius: 50%;
@@ -38,18 +49,24 @@
       border-radius: 999px;
       margin: 10px auto;
       padding: 10px 20px;
-      max-width: 600px; /* تم تعديله من 400 إلى 600 */
+      max-width: 600px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       direction: rtl;
       transition: background-color 0.3s;
       height: 70px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
     }
 
-    .link-card:hover {
-      background-color: #4a4a4a;
-    }
+    .link-card:nth-of-type(1) { animation-delay: 0.2s; }
+    .link-card:nth-of-type(2) { animation-delay: 0.4s; }
+    .link-card:nth-of-type(3) { animation-delay: 0.6s; }
+    .link-card:nth-of-type(4) { animation-delay: 0.8s; }
+    .link-card:nth-of-type(5) { animation-delay: 1s; }
+    .link-card:nth-of-type(6) { animation-delay: 1.2s; }
+    .link-card:nth-of-type(7) { animation-delay: 1.4s; }
 
     .icon-wrapper {
       width: 50px;
@@ -84,6 +101,9 @@
       margin: 50px auto 0;
       display: block;
       filter: brightness(0) invert(1);
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+      animation-delay: 2.6s;
     }
 
     .statement {
@@ -94,9 +114,12 @@
       margin: 40px auto 20px;
       max-width: 600px;
       line-height: 2;
-      font-size: 30px;
+      font-size: 25px; /* ✅ تم تعديل الحجم هنا */
       text-align: justify;
       border: 1px solid #d4af37;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+      animation-delay: 1.6s;
     }
 
     .statement p.center {
@@ -112,6 +135,11 @@
       font-weight: bold;
       color: white;
     }
+
+    .numbered-links .link-card:nth-child(1) { animation-delay: 1.8s; }
+    .numbered-links .link-card:nth-child(2) { animation-delay: 2.0s; }
+    .numbered-links .link-card:nth-child(3) { animation-delay: 2.2s; }
+    .numbered-links .link-card:nth-child(4) { animation-delay: 2.4s; }
 
     a {
       text-decoration: none;
@@ -162,9 +190,6 @@
     <div class="link-text">الموقع الرسمي</div></div>
   </a>
 
-  <img src="salh logo.svg" alt="شعار صالح محمد العراقي" class="footer-logo" />
-
-  <!-- البيان -->
   <div class="statement">
     <p class="center"><strong>بسمه تعالى</strong></p>
     <p>نود إعلامكم بأن المواقع الخاصة التي يحق لها نشر التوجيهات والإرشادات حصراً هي :-<br>
@@ -204,6 +229,8 @@
       </div>
     </a>
   </div>
+
+  <img src="salh logo.svg" alt="شعار صالح محمد العراقي" class="footer-logo" />
 
 </body>
 </html>
